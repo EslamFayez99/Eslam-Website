@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website | Eslam Fayez</title>
+    <!-- Swiper Css -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Bootstrap Css Files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Main WebSite Css File -->
+    <link class="ltr" rel="stylesheet" href="css/website.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Loading -->
+    <div class="bg-loading w-100 h-100 fixed-top">
+      <div class="loading position-relative w-100 d-flex justify-content-center align-items-center">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <p class="fs-1 position-absolute">Loading...</p>
+      </div>
+    </div>
+    <!-- End Loading -->
+    <!-- Start Buttn-UP -->
+    <div class="btn-up">
+      <a><i class="fa-regular fa-circle-up up fs-3"></i></a>
+    </div>
+    <!-- End Buttn-UP -->
+    <!-- Start Setting Box -->
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="fa fa-gear gear"></i>
+      </div>
+      <div class="settings-container">
+        <!-- Start Clock -->
+        <div class="option-box mb-5">
+          <h4><i class="fa-regular fa-clock clock-icon"></i> Time</h4>
+          <div class="date-time d-flex justify-content-center align-items-center">
+            <p id="clock"></p>
+          </div>
+        </div>
+        <!-- End Clock -->
+        <!-- Colors Optins -->
+        <div class="option-box mb-5">
+          <h4>Color</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#219cd4"></li>
+            <li data-color="#395bd4"></li>
+            <li data-color="#754ef9"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#a31344"></li>
+          </ul>
+        </div>
+        <!-- Colors Optins -->
+        <!-- Dark And Light -->
+        <div class="option-box mb-5">
+          <h4>Mode</h4>
+          <div id="content" class="content-mod mt-3 d-flex flex-column align-items-center">
+            <input type="checkbox" id="check">
+            <label for="check">
+              <i class="fa-solid fa-sun sun"></i>
+              <i class="fa-solid fa-moon moon"></i>
+            <div class="switch"></div>
+            </label>
+          </div>
+        </div>
+        <!-- End Dark And Light -->
+        <!-- Start Language -->
+        <div class="option-box">
+          <h4>Languages</h4>
+          <div id="content" class="content-mod mt-3 d-flex flex-column align-items-center">
+            <div class="img-language">
+              <a href="index-rtl.html"><img class="ar" src="imgs/language/ar.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+        <!-- End Language -->
+        <!-- Start Reset Option -->
+        <button class="reset-options">Reset Options</button>
+        <!-- End Reset Option -->
+      </div>
+    </div>
+    <!-- End Setting Box -->
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand fs-2 fw-bold logo" href="#">E</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#main"
+          aria-controls="main"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars open-nav"></i>
+          <i class="fa-solid fa-xmark nav-close"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="main">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home" style="--i:1;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" style="--i:2;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services" style="--i:3;">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" style="--i:4;">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact" style="--i:5;">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Home Content -->
+    <section id="home" class="home position-relative mb-5">
+      <div class="home-content">
+        <div class="container">
+          <div class="content mb-4">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="text pt-5">
+                  <h3 class="fs-2 fw-bold">Hello, I am</h3>
+                  <h1 class="fw-bold mt-2 mb-2"><span>Eslam</span> Fayez</h1>
+                  <h3 class="fs-2 fw-bold mb-4">And I'm a <span class="multiple-text"></span></h3>
+                  <p class="fs-5">I work in front-end web development, and I have experience in dealing with programming and modern web technologies, and I have built a lot of projects that have increased my experience. I am a fast learner and always love to develop myself.</p>
+                  <div class="social-media d-flex">
+                    <a class="fs-5 rounded-circle d-flex justify-content-center align-items-center" href="https://www.facebook.com/profile.php?id=100078159365997">
+                      <i class="fa-brands fa-facebook facebook"></i>
+                    </a>
+                    <a class="fs-5 rounded-circle d-flex justify-content-center align-items-center" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Feslam-fayez-86566425b%3Ffbclid%3DIwAR2f5eVTj3qS-pPKRWk0TKct20qhbAHMC84WJhRFyGPwMvsRKBydD2cmu2g&h=AT37uH20oi1QpKOaKRokGwO6aCV3jQiBGe8wm2RJgZwxdvQ-K5E3XO9Nnxmtk4P1dZziAYH9vpXHwoDrWnu6n3mAGIl55YZkK7bZGGNZLExtclZ2aYm1yzhzvTSgdngPMKtKDg">
+                      <i class="fa-brands fa-linkedin linkedin"></i>
+                    </a>
+                    <a class="fs-5 rounded-circle d-flex justify-content-center align-items-center" href="https://github.com/EslamFayez99">
+                      <i class="fa-brands fa-github github"></i>
+                    </a>
+                    <a class="fs-5 rounded-circle d-flex justify-content-center align-items-center" href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Feslam_fayez_a%3Figshid%3DMTIzZWQxMDU%253D%26fbclid%3DIwAR3jZMBWkM1B1ejRQQBeMe-Q6D5l4ifPAxGokFo5M7p_8Iw-vww9RBu0e5o&h=AT37uH20oi1QpKOaKRokGwO6aCV3jQiBGe8wm2RJgZwxdvQ-K5E3XO9Nnxmtk4P1dZziAYH9vpXHwoDrWnu6n3mAGIl55YZkK7bZGGNZLExtclZ2aYm1yzhzvTSgdngPMKtKDg">
+                      <i class="fa-brands fa-instagram instagram"></i>
+                    </a>
+                  </div>
+                  <div class="buttn">
+                    <a download="imgs/CV/Eslam Fayez Resources.pdf" href="#">
+                    <i class="fa-solid fa-cloud-arrow-down"></i> Download Cv</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="container-home">
+            <div class="profession-container">
+              <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                  <i class="fa-solid fa-laptop-code icon"></i>
+                  <h6>Web Developer</h6>
+                </div>
+                <div class="profession" style="--i:1;">
+                  <i class="fa-solid fa-code icon"></i>
+                  <h6>Clean Code</h6>
+                </div>
+                <div class="profession" style="--i:2;">
+                  <i class="fa-solid fa-palette icon"></i>
+                  <h6>Web Designer</h6>
+                </div>
+                <div class="profession" style="--i:3;">
+                  <i class="fa-solid fa-mobile-screen icon"></i>
+                  <h6>Responsive</h6>
+                </div>
+                <div class="circle"></div>
+              </div>
+              <div class="overlay"></div>
+              <div class="home-img">
+                <img src="imgs/home.png" alt="">
+              </div>
+            </div>
+          </div>
+      <a href="#about" class="go-down text-center d-block">
+        <i class="fa-solid fa-angles-down down"></i>
+      </a>
+      </div>
+    </section>
+    <!-- Start About ME -->
+    <section id="about" class="about mb-5 pt-5 pb-5 position-relative">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-4 mb-5">
+            <div class="bg-img">
+              <div class="about-img mb-5">
+                <img class="mw-100" src="imgs/about.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-5">
+            <div class="about-text">
+              <h2 class="mb-3 fw-bold">About <span>Me</span></h2>
+              <h3 class="mb-4 fs-3">Hi I'm Here To Help Your Next Project!</h3>
+              <p class="fs-5">I am a web developer, and I obtained a bachelor's degree in information systems and computer technology in 2022, and I am now working in the design and development of websites, and I have the experience that qualifies me to design the best websites with accuracy, high quality, and responsiveness to all screens. I designed many projects which increased my experience and my ability to know the problems and solve them in the best way. a result</p>
+              <div class="buttn"><a href="#services">Read More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About ME -->
+    <!-- Start Skills -->
+    <div class="skills position-relative pb-5 mb-5">
+      <div class="main-title">
+        <h2><span>Our</span> Skills</h2>
+      </div>
+      <div class="container">
+        <div class="row align-items-center justify-content-between mt-5 mb-5">
+          <div class="col-lg-5">
+            <div class="skill-box">
+              <div class="skill-name">HTML</div>
+              <div class="skill-progress">
+                <span data-progress="90%"></span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-name">CSS</div>
+              <div class="skill-progress">
+                <span data-progress="84%"></span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-progress">
+                <span data-progress="76%"></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="skill-box">
+              <div class="skill-name">BootStrap</div>
+              <div class="skill-progress">
+                <span data-progress="70%"></span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-name">SASS</div>
+              <div class="skill-progress">
+                <span data-progress="80%"></span>
+              </div>
+            </div>
+            <div class="skill-box">
+              <div class="skill-name">Vue</div>
+              <div class="skill-progress">
+                <span data-progress="67%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Skills -->
+    <!-- Start Services -->
+    <section id="services" class="services mb-5">
+      <div class="main-title">
+        <h2><span>Our</span> Services</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-4 col-md-6">
+            <div class="services-box">
+              <div class="card text-center mb-5">
+                <i class="fa-solid fa-laptop-code icon"></i>
+                <div class="card-body">
+                  <h2 class="card-title">Front-end Development</h2>
+                  <p class="card-text">I can build a beautiful and scalable SPA using <span>HTML, CSS, JS</span> and can use any of the following frameworks <span>React.js and Vue.js</span></p>
+                  <div class="buttn"><a href="https://wa.me/+201004882023">Order Now</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="services-box">
+              <div class="card text-center mb-5">
+                <i class="fa-solid fa-display icon"></i>
+                <div class="card-body">
+                  <h2 class="card-title">Web Developer</h2>
+                  <p class="card-text">I develop microservices using front-end frameworks and programming languages To run on the server.</p>
+                  <div class="buttn"><a href="https://wa.me/+201004882023">Order Now</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="services-box">
+              <div class="card text-center mb-5">
+                <i class="fa-brands fa-html5 icon"></i>
+                <div class="card-body">
+                  <h2 class="card-title">Create A Template</h2>
+                  <p class="card-text">I Can Create A Template And Design It. You Can Add This Template Directly To Your Website And Link It To The Database</p>
+                  <div class="buttn"><a href="https://wa.me/+201004882023">Order Now</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="services-box">
+              <div class="card text-center mb-5">
+                <i class="fa-solid fa-code icon"></i>
+                <div class="card-body">
+                  <h2 class="card-title">Clean Code</h2>
+                  <p class="card-text">I design the website without any errors in the code, which makes the website perfect.</p>
+                  <div class="buttn"><a href="https://wa.me/+201004882023">Order Now</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="services-box">
+              <div class="card text-center mb-5">
+                <i class="fa-solid fa-palette icon"></i>
+                <div class="card-body">
+                  <h2 class="card-title">Creative design</h2>
+                  <p class="card-text">I design websites with high quality and creative form that dazzles users.</p>
+                  <div class="buttn"><a href="https://wa.me/+201004882023">Order Now</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-6">
+            <div class="services-box">
+              <div class="card text-center mb-5">
+                <i class="fa-solid fa-mobile-screen icon"></i>
+                <div class="card-body">
+                  <h2 class="card-title">Responsive design</h2>
+                  <p class="card-text">I can fully design the web site that responds to all screens and without any errors.</p>
+                  <div class="buttn"><a href="https://wa.me/+201004882023">Order Now</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services -->
+    <!-- Start My Projects  -->
+    <section id="projects" class="my-projects position-relative mb-5">
+      <div class="main-title">
+        <h2><span>My</span> projects</h2>
+      </div>
+      <div class="container">
+        <div class="bg-projects">
+          <div class="btn-projct mb-4">
+            <span class="all active">All</span>
+            <span class="html-css">Html-CSS</span>
+            <span class="sass">SASS</span>
+            <span class="js">JS</span>
+            <span class="vue">Vue</span>
+          </div>
+          <div class="projects-container">
+            <div class="css-projects">
+              <div class="row">
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/project-1/project (1).png" alt="">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn project-one-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>  <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/Kasper/kasper.png" alt="Template Ywo">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn kasper-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>  <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/Dashboard/dashboard.png" alt="Template Ywo">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn dashboard-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i> <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/Eslam/eslam-1.png" alt="Template Ywo">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn eslam-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i><p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/WE/we(1).png" alt="Template One">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn we-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>  <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/Adidas/Adidas.png" alt="">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn adidas-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i> <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="js-projects">
+              <div class="row">
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects//Special-Design/spcial.png" alt="Template One">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn special-design-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>  <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/mnfaa/mnfaa.png" alt="">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn mnfaa-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>  <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/Crads/crds.png" alt="Template One">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn crds-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>  <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/Scroll/scroll(1).png" alt="Template One">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn scroll-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>  <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/Iphone/iphone (1).png" alt="">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn iphone-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>  <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-md-6">
+                    <div class="project-box position-relative overflow-hidden mb-5">
+                      <div class="image">
+                        <img class="mw-100" src="imgs/projects/Login/login (1).png" alt="">
+                      </div>
+                      <div class="layer position-absolute left-0 bottom-0 w-100 h-100 text-center p-3 align-items-center d-flex justify-content-center flex-column">
+                        <h4 class="fs-3 mb-5 pe-none">The Design</h4>
+                        <a class="buttn login-btn d-flex justify-content-center align-items-center fs-5"><i class="fa-solid fa-arrow-up-right-from-square arrow"></i>  <p>click,here</p></a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Popup -->
+    <div class="name-projects">
+      <div class="project-one">
+        <div class="popup-project">
+          <div class="close"><span class="close-popup">X</span></div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/project-1/project (2).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/project-1/project (3).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/project-1/project (4).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/project-1/project (5).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/project-1/project (6).png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/Project-1.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/Project-1/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Project One</h1>
+                  <p class="fs-5 mb-4">This is my first project that I designed at the beginning of my educational journey, I hope you like it.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="kasper">
+        <div class="popup-project">
+          <div class="close">
+            <span class="close-popup">X</span>
+          </div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Kasper/kasper-2 (1).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Kasper/kasper-2 (2).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Kasper/kasper-2 (3).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Kasper/kasper-2 (4).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Kasper/kasper-2 (5).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Kasper/kasper-2 (6).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Kasper/kasper-2 (7).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Kasper/kasper-2 (8).png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/HTML_Adn_CSS_Project_One.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/HTML_Adn_CSS_Project_One/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Kasber</h1>
+                  <p class="fs-5 mb-4">This is my second project that I designed at the beginning of my educational journey, I hope you like it.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard">
+        <div class="popup-project">
+          <div class="close"><span class="close-popup">X</span></div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Dashboard/dashboard.png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Dashboard/popup-1.png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Dashboard/popup-2.png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Dashboard/popup-3.png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Dashboard/popup-4.png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Dashboard/popup-5.png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Dashboard/popup-6.png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Dashboard/popup-7.png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/HTML_And_CSS_Project_Three.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/HTML_And_CSS_Project_Three/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Dashboard</h1>
+                  <p class="fs-5 mb-4">This is the fourth project that I designed at the beginning of my educational journey, I hope you like it.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="eslam">
+        <div class="popup-project">
+          <div class="close">
+            <span class="close-popup">X</span>
+          </div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (1).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (2).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (3).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (4).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (5).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (6).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (7).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (8).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (9).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (10).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (11).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (12).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (13).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Eslam/eslam-2 (14).png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/HTML_And_CSS_Project_Two.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/HTML_And_CSS_Project_Two/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Eslam</h1>
+                  <p class="fs-5 mb-4">This application displays and downloads the latest and newest mobile and PlayStation games.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="we">
+        <div class="popup-project">
+          <div class="close"><span class="close-popup">X</span></div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/WE/we(2).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/WE/we(3).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/WE/we(4).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/WE/we(5).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/WE/we(6).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/WE/we(7).png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/Template-how-ar-we.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/Template-how-ar-we/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Develobug</h1>
+                  <p class="fs-5 mb-4">This is my second project that I designed at the beginning of my educational journey, I hope you like it.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="adidas">
+        <div class="popup-project">
+          <div class="close"><span class="close-popup">X</span></div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Adidas/adidas.png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/HTML-AND-CSS-And-JS-My-Project.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/HTML-AND-CSS-And-JS-My-Project/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Adidas</h1>
+                  <p class="fs-5 mb-4">This application to display and sell Adidas shoes.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="special-design">
+        <div class="popup-project">
+          <div class="close"><span class="close-popup">X</span></div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Special-Design/spcial(1).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Special-Design/spcial(2).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Special-Design/spcial(3).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Special-Design/spcial(4).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Special-Design/spcial(5).png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/Special-Design.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/Special-Design/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Spcial Design</h1>
+                  <p class="fs-5 mb-4">This is a simple template that I designed at the beginning of my educational journey, I hope you like it.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="crds">
+        <div class="popup-project">
+          <div class="close"><span class="close-popup">X</span></div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Crads/crds.png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Crads/crds-2.png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/Ceuds_Project.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/Ceuds_Project/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Cruds</h1>
+                  <p class="fs-5 mb-4">This application is for product management and applies to any project to sell products.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mnfaa">
+        <div class="popup-project">
+          <div class="close"><span class="close-popup">X</span></div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/mnfaa/mnfaa-2.png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/mnfaa/mnfaa-3.png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/mnfaa/mnfaa-4.png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/HTML_And_CSS_Tmplet_Two.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/HTML_And_CSS_Tmplet_Two/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">منفعة</h1>
+                  <p class="fs-5 mb-4">This application is to display and sell products to people who display their products on the site.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="iphone">
+        <div class="popup-project">
+          <div class="close"><span class="close-popup">X</span></div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Iphone/iphone (1).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Iphone/iphone (2).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Iphone/iphone (3).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Iphone/iphone (4).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Iphone/iphone (5).png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/HTML-AND-CSS-And-JS-My-Project-8.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/HTML-AND-CSS-And-JS-My-Project-8/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Iphone</h1>
+                  <p class="fs-5 mb-4">This is a simple template for selling an iPhone that I designed at the beginning of my educational journey. I hope you like it.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll">
+        <div class="popup-project">
+          <div class="close"><span class="close-popup">X</span></div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Scroll/scroll(2).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Scroll/scroll(3).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Scroll/scroll(4).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Scroll/scroll(5).png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/Scroll-js.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/Scroll-js/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Scroll</h1>
+                  <p class="fs-5 mb-4">This is a simple template that I designed at the beginning of my educational journey, I hope you like it.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="login">
+        <div class="popup-project">
+          <div class="close"><span class="close-popup">X</span></div>
+          <div class="container-popup">
+            <div class="row justify-content-between">
+              <div class="col-lg-6">
+                <div class="wrapper-popup">
+                  <div class="img-wrapper position-relative pb-4 w-100">
+                    <div class="mySwiper p-3 rounded-5 overflow-hidden">
+                      <div class="imgs swiper-wrapper">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Login/login (3).png" alt="">
+                        <img class="swiper-slide d-flex align-items-center flex-column rounded-5" src="imgs/projects/Login/login (2).png" alt="">
+                      </div>
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                  <div class="btn-popup">
+                    <a href="https://github.com/EslamFayez99/Template-Login.git"><i class="fa-brands fa-github"></i> Gethub</a>
+                    <a href="https://eslamfayez99.github.io/Template-Login/"><i class="fa-solid fa-link"></i> Link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="text-popup">
+                  <h1 class="mb-3 fs-2 fw-bold">Login</h1>
+                  <p class="fs-5 mb-4">This is a simple site login form that I designed at the beginning of my educational journey. I hope you like it.</p>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End My Projects -->
+    <!-- Start Testimonial Design -->
+    <div class="testimonial d-flex align-items-center flex-column w-100 pb-5 mb-5">
+      <div class="main-title">
+        <h2>Testimonial</h2>
+      </div>
+      <div class="testimonial-wrapper position-relative w-100">
+        <div class="testimonial-box mySwiper p-3 rounded-5 overflow-hidden">
+          <div class="testimonial-content swiper-wrapper">
+            <div class="testimonial-slide swiper-slide d-flex align-items-center flex-column rounded-5 ">
+              <img src="imgs/testimonial/testimonial(2).png" alt="">
+              <h3>Jacson Levi</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae beatae eius, aliquam molestiae a deleniti qui incidunt vel illum tenetur fuga quae natus eveniet. Dolor at iusto alias quae.</p>
+            </div>
+            <div class="testimonial-slide swiper-slide d-flex align-items-center flex-column rounded-5 ">
+              <img src="imgs/testimonial/testimonial(3).png" alt="">
+              <h3>Jacson Levi</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae beatae eius, aliquam molestiae a deleniti qui incidunt vel illum tenetur fuga quae natus eveniet. Dolor at iusto alias quae.</p>
+            </div>
+            <div class="testimonial-slide swiper-slide d-flex align-items-center flex-column rounded-5 ">
+              <img src="imgs/testimonial/testimonial(4).png" alt="">
+              <h3>Jacson Levi</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vitae beatae eius, aliquam molestiae a deleniti qui incidunt vel illum tenetur fuga quae natus eveniet. Dolor at iusto alias quae.</p>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonial Design -->
+    <!-- Start Contact Me -->
+    <section id="contact" class="contact-me position-relative">
+    <div class="main-title">
+      <h2><span>Contact</span> Me</h2>
+    </div>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-4 mb-5">
+          <div class="card text-center mb-3 ">
+            <i class="fa-solid fa-envelope icon fs-2 pt-2"></i>
+            <div class="card-body">
+              <h2 class="card-title fs-5 fw-bold">Email</h2>
+              <p class="card-text fs-">eslamfa17@gmail.com</p>
+              <div class="buttn"><a href="mailto:eslamfa17@gmail.com">Send an email</a></div>
+            </div>
+          </div>
+          <div class="card text-center mb-3 ">
+            <i class="fa-brands fa-whatsapp icon fs-2 pt-2"></i>
+            <div class="card-body">
+              <h2 class="card-title fs-5 fw-bold">WhatsApp</h2>
+              <p class="card-text fs-">+201004882023</p>
+              <div class="buttn"><a href="https://wa.me/+201004882023">Send an message</a></div>
+            </div>
+          </div>
+          <div class="card text-center mb-3 ">
+            <i class="fa-brands fa-linkedin icon fs-2 pt-2"></i>
+            <div class="card-body">
+              <h2 class="card-title fs-5 fw-bold">Linkedin</h2>
+              <p class="card-text fs-">@eslam-fayez</p>
+              <div class="buttn"><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Feslam-fayez-86566425b%3Ffbclid%3DIwAR2f5eVTj3qS-pPKRWk0TKct20qhbAHMC84WJhRFyGPwMvsRKBydD2cmu2g&h=AT37uH20oi1QpKOaKRokGwO6aCV3jQiBGe8wm2RJgZwxdvQ-K5E3XO9Nnxmtk4P1dZziAYH9vpXHwoDrWnu6n3mAGIl55YZkK7bZGGNZLExtclZ2aYm1yzhzvTSgdngPMKtKDg">Send an message</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <form class="mb-5" action="mailto:eslamfa17@gmail.com">
+            <div class="input-box d-flex align-items-center flex-column">
+              <input required class="name" type="text" name="name" placeholder="Full Name">
+              <input required type="email" name="email" placeholder="Email Address">
+              <input type="number" name="number" placeholder="Mobile Number">
+              <input required type="text" name="subject" placeholder="Email Subject">
+              <textarea required name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+              <input required type="submit" value="Send Message" class="buttn text-center">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- End Contact Me -->
+    <!-- Start Footer -->
+    <div class="footer p-3 d-flex justify-content-center align-items-center">
+      <div class="footer-text ">
+        <p class="mb-0 fs-5">Copyright &copy; 2023 by Eslam Fayez | All Rights Reserved</p>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+
+
+    <!-- Scroll Reveal Js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Script Typeing -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <!-- Font Awesome Library -->
+    <script src="js/all.min.js"></script>
+    <!-- Bootstrap js Files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Main WebSite js File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
