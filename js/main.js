@@ -344,6 +344,13 @@ function handelActive(ev) {
   });
 }
 
+/* ================ Creat Loading ================ */
+let loader = document.querySelector('.bg-loading');
+
+setTimeout( () => {
+  loader.style.display = "none"
+}, 2000);
+
 /* ================ Scroll Reveal ================ */
 
 ScrollReveal({
