@@ -329,9 +329,9 @@ document.querySelector(".reset-options").onclick = function () {
 /* ================ Creat Loading ================ */
 let loader = document.querySelector('.bg-loading');
 
-window.addEventListener('load', () => {
-  loader.style.display = "none";
-});
+setTimeout( () => {
+  loader.style.display = "none"
+}, 2000);
 
 /* ================ Function Handel Active State ================ */
 function handelActive(ev) {
