@@ -1,0 +1,10 @@
+.navbar {
+  .navbar-nav {
+    margin-left: unset !important;
+    margin-right: auto;
+    .nav-link {
+      margin-left: unset;
+      margin-right: 30px;
+    }
+  }
+}

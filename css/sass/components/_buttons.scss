@@ -1,0 +1,65 @@
+.buttn {
+  a {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: var(--main-color);
+      border: 2px solid var(--main-color);
+      border-radius: .6rem;
+      box-shadow: 0 .2rem .5rem var(--shadow-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 10px 0;
+      letter-spacing: 1px;
+      transition: $transition ease;
+      color: var(--white-color);
+      &:hover {
+        background-color: transparent;
+        color: var(--main-color);
+        transform: scale(1.1);
+    }
+  }
+}
+
+.btn-up {
+  position: fixed;
+  right: 30px;
+  bottom: 80px;
+  cursor: pointer;
+  background-color: var(--main-color);
+  padding: 10px;
+  box-shadow: var(--shadow-color);
+  border-radius: 50%;
+  animation: bouncing 1.5s linear infinite;
+  transition: $transition;
+  z-index: 100;
+  display: none;
+  .up {
+      color: var(--white-color);
+  }
+  &.active {
+    display: block;
+  }
+}
+
+// Seteng Options Button
+
+.reset-options {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff0000ea;
+  border: none;
+  width: 178px;
+  margin: 20px auto;
+  display: block;
+  color: var(--white-color);
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: var(--shadow-color);
+  transition: $transition;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #ff0000;
+    letter-spacing: 1px;
+  }
+}

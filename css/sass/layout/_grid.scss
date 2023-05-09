@@ -1,0 +1,33 @@
+* {
+  @include prefixer (box-sizing, border-box, webkit moz o);
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+// .container{
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   /* Small */
+//   @media #{$minSmall} {
+//     width: 750px;
+//   }
+//   /* Medium */
+//   @media #{$minMedium} {
+//     width: 970px;
+//   }
+//   /* Large */
+//   @media #{$minLarge} {
+//     width: 1170px;
+//   }
+// }
