@@ -252,7 +252,7 @@
             font-size: 25px !important;
           }
           @media #{$maxMobileSm} {
-            font-size: 19px !important;
+            font-size: 17px !important;
           }
         }
       }
@@ -698,8 +698,8 @@
         cursor: pointer;
         transition: $transition;
         @media #{$maxMobileSm} {
-        padding: 10px;
-      }
+          padding: 10px;
+        }
         p {
           position: absolute;
           top: -33px;
@@ -750,25 +750,27 @@
     padding: 20px;
     border-radius: 6px;
     .btn-projct {
-      span{
+      button{
         color: var(--bg-color);
+        background-color: transparent;
         padding: 2px 10px;
         border-radius: 6px;
         margin-left: 10px;
-      font-size: 17px;
-      font-weight: 600;
-      cursor: pointer;
-      border: 2px solid var(--bg-color);
-      transition: $transition;
-      &:hover, &.active {
-        background-color: var(--bg-color);
-        color: var(--main-color);
-      }
-      @media #{$maxMobile} {
-        margin: 0;
+        font-size: 17px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 2px solid var(--bg-color);
+        transition: $transition;
+        &:hover, &.active {
+          background-color: var(--bg-color);
+          color: var(--main-color);
+        }
+        @media #{$maxMobile} {
+          margin-left: 0;
+          margin-bottom: 10px;
+        }
       }
     }
-  }
     .projects-container {
       height: 600px;
       overflow-y: auto;

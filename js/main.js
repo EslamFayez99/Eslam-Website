@@ -1,4 +1,3 @@
-
 /* ================ Check If There's Local Storage Color Option ================ */
 
 let mainColors = localStorage.getItem("color_option");
@@ -26,7 +25,6 @@ let checkBox = document.getElementById("check");
 let bgLink = document.querySelectorAll(".nav-link");
 
 checkBox.addEventListener("change", () => {
-
   document.body.classList.toggle("dark");
 
   document.querySelectorAll(".nav-link").forEach((li) => {
@@ -92,7 +90,7 @@ colorsLi.forEach((li) => {
     // Set Color On Local Storage
     localStorage.setItem("color_option", e.target.dataset.color);
 
-      // Remove Active Class Form All Cgildrens
+    // Remove Active Class Form All Cgildrens
     //   e.target.parentElement.querySelectorAll(".active").forEach(element => {
     //   element.classList.remove("active");
     // });
@@ -106,26 +104,26 @@ colorsLi.forEach((li) => {
 /* ================ Add Class Active For Link ================ */
 
 // toggler Nav Bar
-document.querySelector('.nav-toggle').onclick = function () {
-  document.querySelector('.open-nav').classList.toggle('show-open-icon');
-  document.querySelector('.nav-close').classList.toggle('show-close-icon');
+document.querySelector(".nav-toggle").onclick = function () {
+  document.querySelector(".open-nav").classList.toggle("show-open-icon");
+  document.querySelector(".nav-close").classList.toggle("show-close-icon");
 };
 
 let navCollapse = document.querySelectorAll(".nav-link");
 let popupProjects = document.querySelectorAll(".name-projects");
 navCollapse.forEach((li) => {
-    li.addEventListener("click", () => {
-      document.querySelector(".navbar-collapse").classList.remove("show");
-      document.querySelector('.open-nav').classList.remove('show-open-icon');
-      document.querySelector('.nav-close').classList.remove('show-close-icon');
-      // Remove Class Show The Popup Projects
-      popupProjects.forEach((e) => {
-        e.parentElement.querySelectorAll(".show").forEach(element => {
+  li.addEventListener("click", () => {
+    document.querySelector(".navbar-collapse").classList.remove("show");
+    document.querySelector(".open-nav").classList.remove("show-open-icon");
+    document.querySelector(".nav-close").classList.remove("show-close-icon");
+    // Remove Class Show The Popup Projects
+    popupProjects.forEach((e) => {
+      e.parentElement.querySelectorAll(".show").forEach((element) => {
         element.classList.remove("show");
-        });
       });
     });
   });
+});
 
 /* ================ Typed ================ */
 
@@ -163,7 +161,7 @@ let about = document.querySelector(".about");
 let scrollNav = document.querySelectorAll(".nav-link");
 let section = document.querySelectorAll("section");
 
-window.onscroll =  () => {
+window.onscroll = () => {
   // Skill Offset Top
   let skillsOffsetTop = ourSkills.offsetTop;
 
@@ -200,7 +198,7 @@ window.onscroll =  () => {
     let offset = sec.offsetTop;
     let height = sec.offsetHeight;
     let id = sec.getAttribute("id");
-    if (top >= offset -200 && top < offset + height) {
+    if (top >= offset - 200 && top < offset + height) {
       scrollNav.forEach((links) => {
         links.classList.remove("active");
         document
@@ -213,45 +211,45 @@ window.onscroll =  () => {
 
 /* ================ Buttons The Projects ================ */
 
-let all = document.querySelector('.all');
-let htmlCss = document.querySelector('.html-css');
-let sass = document.querySelector('.sass');
-let js = document.querySelector('.js');
-let vue = document.querySelector('.vue');
+let all = document.querySelector(".all");
+let htmlCss = document.querySelector(".html-css");
+let sass = document.querySelector(".sass");
+let js = document.querySelector(".js");
+let vue = document.querySelector(".vue");
 
-all.onclick =  () => {
-  document.querySelector('.css-projects').classList.remove('not-show');
-  document.querySelector('.js-projects').classList.remove('not-show');
-}
-htmlCss.onclick =  () => {
-  document.querySelector('.css-projects').classList.remove('not-show');
-  document.querySelector('.js-projects').classList.add('not-show');
-}
-js.onclick =  () => {
-  document.querySelector('.js-projects').classList.remove('not-show');
-  document.querySelector('.css-projects').classList.add('not-show');
-}
-vue.onclick =  () => {
-  document.querySelector('.css-projects').classList.add('not-show');
-  document.querySelector('.js-projects').classList.add('not-show');
-}
-sass.onclick =  () => {
-  document.querySelector('.css-projects').classList.add('not-show');
-  document.querySelector('.js-projects').classList.add('not-show');
-}
+all.onclick = () => {
+  document.querySelector(".css-projects").classList.remove("not-show");
+  document.querySelector(".js-projects").classList.remove("not-show");
+};
+htmlCss.onclick = () => {
+  document.querySelector(".css-projects").classList.remove("not-show");
+  document.querySelector(".js-projects").classList.add("not-show");
+};
+js.onclick = () => {
+  document.querySelector(".js-projects").classList.remove("not-show");
+  document.querySelector(".css-projects").classList.add("not-show");
+};
+vue.onclick = () => {
+  document.querySelector(".css-projects").classList.add("not-show");
+  document.querySelector(".js-projects").classList.add("not-show");
+};
+sass.onclick = () => {
+  document.querySelector(".css-projects").classList.add("not-show");
+  document.querySelector(".js-projects").classList.add("not-show");
+};
 
 /* ================ Create Popup With Image The Projects ================ */
 
-let btnProjects = document.querySelectorAll('.btn-projct span');
+let btnProjects = document.querySelectorAll(".btn-projct button");
 
 // Add Class Active at The Buttn
 btnProjects.forEach((sp) => {
   sp.addEventListener("click", (e) => {
-  //   document.querySelectorAll(".active").forEach((element) => {
-  //     element.classList.remove("active");
-  //   });
-  //   e.target.classList.add('active');
-  handelActive(e);
+    //   document.querySelectorAll(".active").forEach((element) => {
+    //     element.classList.remove("active");
+    //   });
+    //   e.target.classList.add('active');
+    handelActive(e);
   });
 });
 
@@ -324,14 +322,14 @@ document.querySelector(".reset-options").onclick = function () {
 
   // Reload Window
   window.location.reload();
-}
+};
 
 /* ================ Creat Loading ================ */
-let loader = document.querySelector('.bg-loading');
+let loader = document.querySelector(".bg-loading");
 
-setTimeout( () => {
-  loader.style.display = "none"
-}, 2000);
+setTimeout(() => {
+  loader.style.display = "none";
+}, 1500);
 
 /* ================ Function Handel Active State ================ */
 function handelActive(ev) {

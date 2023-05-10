@@ -44,7 +44,6 @@
   font-size: 1.2rem;
   font-weight: 600;
   margin: 10px 0;
-  letter-spacing: 1px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   color: var(--white-color);
@@ -614,7 +613,7 @@ box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51)
 }
 @media (max-width: 437px) {
   .home .home-content .text h3 span {
-    font-size: 19px !important;
+    font-size: 17px !important;
   }
 }
 .home .home-content .text h1 {
@@ -1106,7 +1105,7 @@ box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51)
   overflow-y: auto;
 }
 .services .services-box .card p::-webkit-scrollbar {
-  width: 4px;
+  width: 2px;
 }
 .services .services-box .card p::-webkit-scrollbar-track {
   background-color: #aaa;
@@ -1158,13 +1157,17 @@ box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51)
 }
 .my-projects .project-box .layer .buttn {
   position: relative;
-  width: 3.5rem;
-  height: 3.5rem;
+  padding: 15px;
   background-color: var(--bg-color);
   border-radius: 50%;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+@media (max-width: 437px) {
+  .my-projects .project-box .layer .buttn {
+    padding: 10px;
+  }
 }
 .my-projects .project-box .layer .buttn p {
   position: absolute;
@@ -1222,8 +1225,9 @@ box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51)
   padding: 20px;
   border-radius: 6px;
 }
-.my-projects .bg-projects .btn-projct span {
+.my-projects .bg-projects .btn-projct button {
   color: var(--bg-color);
+  background-color: transparent;
   padding: 2px 10px;
   border-radius: 6px;
   margin-left: 10px;
@@ -1234,13 +1238,14 @@ box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51)
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.my-projects .bg-projects .btn-projct span:hover, .my-projects .bg-projects .btn-projct span.active {
+.my-projects .bg-projects .btn-projct button:hover, .my-projects .bg-projects .btn-projct button.active {
   background-color: var(--bg-color);
   color: var(--main-color);
 }
 @media (max-width: 767px) {
-  .my-projects .bg-projects .btn-projct span {
-    margin: 0;
+  .my-projects .bg-projects .btn-projct button {
+    margin-left: 0;
+    margin-bottom: 10px;
   }
 }
 .my-projects .bg-projects .projects-container {
