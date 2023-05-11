@@ -1,0 +1,11 @@
+/* Start Footer */
+.footer {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  p {
+    @media #{$maxMobile} {
+      font-size: 12px !important;
+    }
+  }
+}
+/* End Footer */
